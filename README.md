@@ -111,4 +111,3 @@ npm run dev
 - **AI Integration:** Google Gemini API for intelligent code assistance
 
 
-For issues or questions, please open an [issue](https://github.com/your-username/code-helper-ai/issues) on GitHub.
