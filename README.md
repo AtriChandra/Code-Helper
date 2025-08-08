@@ -1,80 +1,114 @@
-# Code Helper AI - React App
+# Code Helper AI
 
-A modern React application built with Vite that serves as an interactive coding tutor powered by Google's Gemini AI.
+**Code Helper AI** is a modern React web application that helps users learn programming concepts, debug code, and solve coding challenges in any programming language. Powered by Google Gemini AI, users can ask programming questions and receive structured, example-rich answers instantly with a sleek, responsive interface.
 
-## Features
+<img width="1919" height="902" alt="Code Helper AI Dashboard" src="https://github.com/user-attachments/assets/631a44ca-2412-4cfd-9772-e0df81a66bfc" />
 
-- Interactive coding question interface
-- Real-time AI responses for programming questions
-- Modern, responsive design
-- Welcome screen animation
-- Sidebar navigation
-- Support for multiple programming languages and concepts
+---
 
-## Getting Started
+## ✨ Features
+
+- **Modern React Architecture:** Built with React 18 and Vite for optimal performance and development experience
+- **Component-Based Design:** Modular, maintainable components with proper state management
+- **AI-Powered Coding Instructor:** Answers coding questions with clear explanations, code snippets, and best practices
+- **Responsive & Accessible:** Perfect experience across desktops, tablets, and mobile devices
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (version 16 or higher)
-- npm or yarn
+- **Node.js** (version 16 or higher)
+- **npm** or **yarn**
+- A **Google Gemini API Key** (get yours from [Google AI Studio](https://makersuite.google.com/app/apikey))
 
 ### Installation
 
-1. Clone or download the project files
-2. Install dependencies:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/code-helper-ai.git
+   cd code-helper-ai
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables:**
+   - Create a `.env` file in the root directory
+   - Add your API key:
+     ```
+     VITE_GEMINI_API_KEY=your_actual_gemini_api_key_here
+     ```
+   - **Important:** Never commit your `.env` file to version control
+
+### Running Locally
 
 ```bash
-npm install
-```
-
-3. Update the API key in `src/components/MainContent.jsx`:
-   - Replace `GEMINI_API_KEY` with your actual Google AI Studio API key
-   - Get your API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
-
-### Running the Development Server
-
-```bash
+# Start development server
 npm run dev
+
+# Open your browser to http://localhost:5173
 ```
 
-The application will be available at `http://localhost:5173`
 
 
+---
+
+## 🖥️ Project Structure
+
+| File/Folder                   | Purpose                                                           |
+|-------------------------------|-------------------------------------------------------------------|
+| `src/App.jsx`                 | Root component managing welcome screen and main application       |
+| `src/main.jsx`                | Application entry point with React DOM rendering                  |
+| `src/index.css`               | Global styles with CSS custom properties and responsive design    |
+| `src/components/WelcomeScreen.jsx` | Animated landing page component                              |
+| `src/components/Sidebar.jsx`  | Navigation sidebar with menu items and branding                   |
+| `src/components/MainContent.jsx` | Core application logic and Gemini AI integration              |
+| `src/components/InputSection.jsx` | Question input form with validation and keyboard shortcuts    |
+| `src/components/OutputSection.jsx` | AI response display with formatted code highlighting        |
+| `package.json`                | Project dependencies and build scripts                            |
+| `vite.config.js`              | Vite configuration for development and build                      |
+| `.env`                        | Environment variables (not tracked in Git)                        |
+| `.gitignore`                  | Excludes sensitive files and build outputs from Git               |
+
+---
+
+## 🧑‍💻 Usage
+
+1. **Welcome Screen:** On first load, enjoy the smooth welcome animation
+2. **Ask Questions:** Type any coding-related question in the input area:
+   - *"Explain closures in JavaScript"*
+   - *"How to implement binary search in Python?"*
+   - *"What are React hooks and how do they work?"*
+3. **Submit:** Click **Ask Coding Instructor** or press **Enter**
+4. **Get Answers:** View comprehensive responses with:
+   - Clear explanations and concepts
+   - Working code examples
+   - Best practices and tips
+   - Proper syntax highlighting
+
+---
+
+## 🔒 Security & Deployment
+
+### Development Security
+- ✅ API keys stored in `.env` file (excluded from Git)
+- ✅ Environment variables properly configured for Vite
+- ✅ No hardcoded secrets in source code
 
 
-## Project Structure
+---
 
-```
-src/
-├── components/
-│   ├── WelcomeScreen.jsx    # Landing page component
-│   ├── Sidebar.jsx          # Navigation sidebar
-│   ├── MainContent.jsx      # Main application logic
-│   ├── InputSection.jsx     # Question input form
-│   └── OutputSection.jsx    # AI response display
-├── App.jsx                  # Root component
-├── main.jsx                 # Application entry point
-└── index.css               # Global styles
-```
+## ⚡ Technologies Used
 
-## Usage
+- **Frontend Framework:** React 18 with modern hooks and functional components
+- **Build Tool:** Vite for lightning-fast development and optimized builds
+- **Styling:** CSS3 with custom properties, Flexbox, Grid, and responsive design
+- **Icons:** Font Awesome 6 for beautiful, scalable icons
+- **AI Integration:** Google Gemini API for intelligent code assistance
 
-1. Launch the application
-2. Click "Enter" on the welcome screen
-3. Type your coding question in the textarea
-4. Click "Ask Coding Instructor" or press Enter
-5. View the AI-generated response
 
-## Customization
-
-- **API Configuration**: Update the `GEMINI_API_KEY` and `MODEL_NAME` in `MainContent.jsx`
-- **Styling**: Modify the CSS variables in `index.css` to change colors and themes
-- **System Instructions**: Adjust the AI behavior by modifying `systemInstructionText` in `MainContent.jsx`
-
-## Technologies Used
-
-- **React 18** - UI framework
-- **Google Gemini AI** - AI response generation
-- **Font Awesome** - Icons
-- **CSS3** - Styling with custom properties
-
+For issues or questions, please open an [issue](https://github.com/your-username/code-helper-ai/issues) on GitHub.
