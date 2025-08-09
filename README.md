@@ -28,8 +28,9 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/code-helper-ai.git
-   cd code-helper-ai
+   git clone https://github.com/AtriChandra/Code-Helper.git
+   cd Code-Helper
+
    ```
 
 2. **Install dependencies:**
