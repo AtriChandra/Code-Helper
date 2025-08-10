@@ -1,4 +1,4 @@
-# Code Helper AI
+# Code Helper 
 
 **Code Helper AI** is a modern React web application that helps users learn programming concepts, debug code, and solve coding challenges in any programming language. Powered by Google Gemini AI, users can ask programming questions and receive structured, example-rich answers instantly with a sleek, responsive interface.
  
